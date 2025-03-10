@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* { box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #a1c3ff;
+    background: #F1F1F1;
+}
+
+img {
+    max-width: 100%;
+    margin: 25px;
+ }
+
+ .boxes img {
+    margin: 15px;
+ }
+
+h1, h2 {
+    margin-bottom: 15px;
+}
+
+.navbar li {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.navbar {
+    background-color:#3474e6;
+    color: white;
+    height: 60px;
+}
+
+.navbar .logo {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: lightblue;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.header {
+    background-color: #0151cc;
+    color: white;
+    min-height: 400px;
+}
+
+.header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.header img {
+    max-width: 100%;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 400px;
+}
+
+.boxes .container {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.box {
+    flex: 1;
+    background-color: #0151cc;
+    color: white;
+    border-radius: 10px;
+    margin: 20px 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+    padding: 15px 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.box i {
+    margin-right: 10px;
+}
+
+.footer {
+    background-color: #0151cc;
+    height: 60px;
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+        }
+
+    .boxes .container {
+        display: block;
+        text-align: center;
+    }
+
+    .footer .container {
+        text-align: center;
+     }
+
+    .navbar .container {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        }
+
+.navbar {
+    padding-bottom: 20px;
+}
+
+.footer {
+    height: 110%;
+}
+
+.header {
+    height: 110%;
+}
+}
